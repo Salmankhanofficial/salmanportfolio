@@ -1,0 +1,177 @@
+.contact-wrapper{
+
+  /* position: relative; */
+  
+    background-color: #b4bdc2;
+    /* height:100%; */
+    /* margin-top: 5rem; */
+    /* bottom: 12rem; */
+
+
+}
+.contact-wrapper .heading{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    
+
+}
+.contact-wrapper  span{
+
+    color: #000000;
+    margin-left: 0.5rem;
+    
+}
+
+
+
+
+
+  .contact-wrapper form{
+
+position: relative;
+bottom: 2rem;
+    padding:1rem;
+    margin: 0 auto;
+    text-align: center;
+    /* margin-bottom:10rem; */
+    /* bottom:5rem; */
+    max-width: 70rem;
+    
+  }
+
+  .contact-wrapper form .input-box{
+
+
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .contact-wrapper .input-box .input-fields{
+
+      position:relative;
+      width: 49%;
+      margin: .8rem 0;
+      
+  }
+  /* .contact-wrapper  #text{
+/* position: relative; */
+
+    /* width:205%; */
+    /* left: 12rem; */
+    /* height:150% ; */
+    /* background-color:green; */
+  
+
+  .contact-wrapper .input-box .input-fields input,
+  .contact-wrapper .text-fields textarea{
+
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    background-color: transparent;
+    border-radius: .6rem;
+    border: .01rem solid #00abf0;
+    color:white;
+  }
+
+
+  .contact-wrapper button{
+
+
+    align-items: center;
+    position: relative;
+    top:1rem;
+    left:20rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 9rem;
+    height:3.5rem;
+    background: #00abf0;
+    /* margin: 10px; */
+    border: 0.1rem solid  #00abf0;
+    border-radius: .4rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    color: #000000;
+    margin-left: 1rem;
+    overflow: hidden; 
+    z-index: 1;
+    cursor: pointer;
+    /* color:#081b29; */
+    transition: .5s;
+
+  }
+
+
+  .contact-wrapper button:hover{
+
+    color: #00abf0;
+    /* border: 2px black; */
+}
+
+.contact-wrapper button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:#081b29;
+    width: 0;
+    transition: .9s;
+    height: 100%;
+    z-index: -1;
+    /* border: 1px solid #00abf0; */
+}
+
+.contact-wrapper button:hover::before {
+    width: 100%;
+}
+
+/* Your existing CSS remains... */
+
+/* Tablet devices (width up to 1024px) */
+@media only screen and (max-width: 1024px) {
+  .contact-wrapper form {
+      max-width: 90%; /* increase to 90% of screen width */
+  }
+
+  .contact-wrapper .input-box .input-fields {
+      width: 100%; /* make each input take the full width of the form */
+      margin-bottom: 1rem;
+  }
+
+  .contact-wrapper button {
+      left: 0;
+      margin: 0 auto;
+      display: block; /* center the button */
+  }
+}
+
+/* Mobile devices (width up to 768px) */
+@media only screen and (max-width: 768px) {
+  .contact-wrapper{
+
+    padding-top:1rem ;
+}
+     
+  .contact-wrapper form {
+      max-width: 100%; /* increase to 100% of screen width */
+      padding: 1rem 2rem; /* add some padding on the sides */
+  }
+
+  .contact-wrapper .heading {
+      font-size: 3rem;
+      /* padding-top: 2rem; */
+  }
+
+  .contact-wrapper button {
+      font-size: 1.4rem; /* decrease the button font size */
+  }
+}

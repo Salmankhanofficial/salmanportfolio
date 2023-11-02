@@ -1,0 +1,176 @@
+.projects-wrapper{
+   /* position: relative; */
+   /* bottom: 12rem; */
+    background-color: #c7c8c9;
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+    /* padding-top:13rem; */
+}
+
+.projects-wrapper  .heading-text h1{
+
+
+    text-align: center;
+    font-size:2.5rem;
+   color:#000000;
+
+
+}
+
+.projects-wrapper .heading-text span{
+
+    color:#000000;
+}
+
+.projects-wrapper .cards-container{
+
+    margin:1rem 10rem 0rem 10rem;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.projects-wrapper .cards-container .card{
+
+
+    width: 33%;
+    height: 18rem;
+    background-color: transparent;
+    border-radius: 1rem;
+    border: 0.5rem solid transparent;
+    /* background-color: aqua; */
+    background-color: #ffffff;
+    text-align: center;
+    /* align-items: center; */
+    color:white;
+    margin:15px;
+    box-shadow: 1px 1px 10px #00abf0;
+    transition: .8s;
+}
+
+.projects-wrapper .cards-container .card:hover{
+
+
+    background-color: #112e42;
+    width: 34%;
+    height:18.5rem ;
+}
+
+.projects-wrapper .cards-container .card img{
+  position: relative;
+  top:0.5rem;
+    width: 80%;
+    height:55% ;
+    background-color:#00abf0;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 10px gray;
+
+
+    /* background-color: #112e42; */
+}
+
+.projects-wrapper .cards-container .card h1{
+
+    padding-top:3rem;
+    font-size: 1.3rem;
+    max-width: 14rem;
+}
+
+.projects-wrapper .cards-container .card .icon-section{
+
+    display: flex;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+
+
+
+}
+
+.projects-wrapper .cards-container a{
+    
+    /* position: relative; */
+  
+    
+}
+
+.projects-wrapper .cards-container a .icon{
+
+    position: relative;
+    top: 1rem;
+    left:2.5rem;
+
+     display: flex;
+    width:2.9rem;
+    height:2.9rem;
+    border-radius:100%;
+    color: #ededed;
+    /* background-color: #00abf0; */
+    align-items: center;
+}
+
+
+.projects-wrapper .cards-container a .icon:hover{
+
+
+    background-color: #00abf0;
+    color: #ededed;
+}
+
+
+
+/* Your current CSS remains here... */
+
+/* Tablet devices (width up to 1024px) */
+@media only screen and (max-width: 1024px) {
+    .projects-wrapper .cards-container {
+        margin: 1rem 5rem;
+    }
+
+    .projects-wrapper .cards-container .card {
+        width: 45%;
+    }
+
+    .projects-wrapper .heading-text h1 {
+        font-size: 2rem;
+    }
+
+    .projects-wrapper .cards-container .card h1 {
+        font-size: 1.2rem;
+        padding-top: 2.5rem;
+    }
+}
+
+/* Mobile devices (width up to 768px) */
+@media only screen and (max-width: 768px) {
+    
+    .projects-wrapper{
+
+        padding-top:1rem ;
+    }
+    
+    .projects-wrapper .cards-container {
+        flex-direction: column;
+        margin: 2rem 2rem 0rem 2rem ;
+    }
+
+    .projects-wrapper .cards-container .card {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .projects-wrapper .cards-container .card:hover{
+
+        background-color: #112e42;
+        width: 105%;
+        height:18.5rem ;
+    }
+    .projects-wrapper .heading-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .projects-wrapper .cards-container .card h1 {
+        font-size: 1.1rem;
+        padding-top: 2rem;
+    }
+}
